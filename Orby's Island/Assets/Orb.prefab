@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6932819373748940688}
   - component: {fileID: 6932819373748940691}
   - component: {fileID: 6932819373748940690}
+  - component: {fileID: 974974990462627923}
   m_Layer: 0
   m_Name: Orb
   m_TagString: Weapon
@@ -123,3 +124,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &974974990462627923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6932819373748940693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04d8078d943384543992052f54ecdfef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

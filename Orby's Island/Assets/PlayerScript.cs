@@ -18,7 +18,6 @@ public class PlayerScript : MonoBehaviour {
     
     }
 
-    // Update is called once per frame
     void Update() {
         move();
         attack();
@@ -71,7 +70,12 @@ public class PlayerScript : MonoBehaviour {
          if (Input.GetKeyDown("space")) {
             float spawnDis = 1.0f;
             Vector2 spawnPos = transform.position + (lastDirection * spawnDis);
-            Instantiate(orb, spawnPos, Quaternion.identity);
+            if(OrbTracker.Tracker.check_amount() == true) {
+                OrbTracker.Tracker.deleteOldest();
+                Instantiate(orb, spawnPos, Quaternion.identity);
+            }
+            else Instantiate(orb, spawnPos, Quaternion.identity);
+           
         }
     }
 }
