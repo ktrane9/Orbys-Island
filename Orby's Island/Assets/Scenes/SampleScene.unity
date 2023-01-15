@@ -6318,5 +6318,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orb: {fileID: 8397273291999494961, guid: 46cba993e4ef14d42b049e5da665e068, type: 3}
+  body: {fileID: 2015592499}
   speed: 7
   lastDirection: {x: 0, y: 0, z: 0}
