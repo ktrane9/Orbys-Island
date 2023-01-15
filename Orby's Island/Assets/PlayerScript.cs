@@ -18,10 +18,14 @@ public class PlayerScript : MonoBehaviour {
     
     }
 
-    void Update() {
+    void Update() { //Processing Inputs
         move();
         attack();
         
+    }
+
+    void FixedUpdate() { //Physics Calculations
+
     }
 
     private void move() {
